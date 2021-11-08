@@ -1,0 +1,36 @@
+{
+  "name": "telegram-interface",
+  "version": "1.0.0",
+  "description": "A cool tool to push wonderful stuff onto Telegram channels",
+  "main": "main.js",
+  "repository": "https://github.com/ActionSeeker/telegram-interface.git",
+  "author": "Luv Karakoti <luv94.karakoti@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^15.3.0",
+    "electron-prebuilt": "^1.4.13",
+    "sass": "^1.43.4",
+    "webpack": "^5.62.1"
+  },
+  "scripts": {
+    "start": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
+    "build": "./node_modules/.bin/webpack",
+    "run": "npm run build && npm run start",
+    "watch:dev": "./node_modules/.bin/webpack-dev-server --hot --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "css-loader": "^6.5.1",
+    "electron-webpack": "^2.8.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.4.0"
+  }
+}

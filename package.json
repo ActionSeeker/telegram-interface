@@ -16,7 +16,7 @@
     "start": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
     "build": "./node_modules/.bin/webpack",
     "run": "npm run build && npm run start",
-    "watch:dev": "./node_modules/.bin/webpack-dev-server --hot --mode development"
+    "watch:dev": "./node_modules/.bin/webpack-dev-server --hot --mode='development'"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

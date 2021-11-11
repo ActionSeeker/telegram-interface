@@ -7,8 +7,10 @@
   "author": "Luv Karakoti <luv94.karakoti@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "classnames": "^2.3.1",
     "electron": "^15.3.0",
     "electron-prebuilt": "^1.4.13",
+    "react-parallax": "^3.3.0",
     "sass": "^1.43.4",
     "webpack": "^5.62.1"
   },

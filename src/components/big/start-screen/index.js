@@ -12,16 +12,8 @@ export default class StartScreen extends React.Component {
   render() {
     return (
       <Fragment>
-        <StartBackground />
-        <div className="container">
-          <div className="row">
-            <div className="twelve columns">
-              <StartButton
-                name="Get Started"
-                onClick={this.showOptionScreen()}
-              />
-            </div>
-          </div>
+        <div className="start-screen screen">
+          <StartButton name="Get Started" onClick={this.showOptionScreen()} />
         </div>
       </Fragment>
     )

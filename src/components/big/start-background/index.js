@@ -39,14 +39,7 @@ export default class StartBackground extends React.Component {
     context.stroke()
   }
 
-  animateCanvas() {
-    // requestAnimationFrame(this.animateCanvas.bind(this))
-    // const { drawn, radius } = this.state
-    // for (let $idx = 0; $idx <= drawn; $idx++) {
-    //   this.drawCanvas(($idx + 1) * radius)
-    // }
-    // this.setState({ drawn: drawn + 1 })
-  }
+  // animateCanvas() {}
 
   render() {
     return (

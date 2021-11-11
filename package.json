@@ -13,9 +13,10 @@
     "webpack": "^5.62.1"
   },
   "scripts": {
-    "start": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
+    "start": "./node_modules/.bin/electron .",
     "build": "./node_modules/.bin/webpack",
     "run": "npm run build && npm run start",
+    "start:dev": "ENVIRONMENT=DEV ./node_modules/.bin/electron .",
     "watch:dev": "./node_modules/.bin/webpack-dev-server --hot --mode='development'"
   },
   "devDependencies": {
@@ -26,6 +27,7 @@
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "electron-webpack": "^2.8.2",
+    "mini-css-extract-plugin": "^2.4.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass-loader": "^12.3.0",

@@ -1,0 +1,33 @@
+@use "sass:math"
+$size: 40
+
+@mixin heading
+  font-family: 'aktiv-grotesk-extended', sans-serif
+  font-weight: 700
+
+.heading1
+  @include heading
+  font-size: $size * 1.2 + rem
+
+.heading3
+  @include heading
+  font-size: math.div($size, 4) + rem
+
+.heading3
+  @include heading
+  font-size: math.div($size, 6) + rem
+
+@mixin textAlign($value)
+  text-align: $value
+
+.text-left
+  text-align: left
+
+.text-center
+  text-align: center
+
+.text-right
+  text-align: right
+
+.text-white
+  color: 'white'

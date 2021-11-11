@@ -12,12 +12,15 @@
     <div id="app"></div>
     <script>
         var bundlePath = './build/bundle.js';
+        var cssPath = './build/style.css';
         if (typeof process !== 'undefined' && process.env.ENVIRONMENT === 'DEV') {
             bundlePath = 'http://localhost:8080/build/bundle.js';
+            cssPath = 'http://localhost:8080/build/style.css';
         }
         var bundleScriptEl = document.createElement('script');
         bundleScriptEl.src = bundlePath;
         document.currentScript.parentNode.insertBefore(bundleScriptEl, document.currentScript);
+        document.querySelector('head').innerHTML += `<link rel="stylesheet" href="${cssPath}" type="text/css"/>`;
     </script>
 </body>
 

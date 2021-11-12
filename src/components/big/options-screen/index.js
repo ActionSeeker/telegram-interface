@@ -1,6 +1,6 @@
 import './style.sass'
-import Button from '../../small/button'
 import React, { Fragment } from 'react'
+import Option from './options'
 
 export default class OptionScreen extends React.Component {
   constructor(props) {
@@ -10,8 +10,23 @@ export default class OptionScreen extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className="option-screen screen">
-          <Button name="Get Started" />
+        <div
+          className="option-screen screen"
+          style={{ opacity: this.props.percentage }}
+        >
+          <div className="container">
+            <div className="row">
+              <div className="four columns">
+                <Option />
+              </div>
+              <div className="four columns">
+                <Option />
+              </div>
+              <div className="four columns">
+                <Option />
+              </div>
+            </div>
+          </div>
         </div>
       </Fragment>
     )

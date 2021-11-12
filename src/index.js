@@ -9,7 +9,10 @@ class App extends React.Component {
     return (
       <Fragment>
         <StartScreen />
-        <OptionScreen />
+        <Parallax
+          strength={200}
+          renderLayer={(percentage) => <OptionScreen percentage={percentage} />}
+        />
       </Fragment>
     )
   }

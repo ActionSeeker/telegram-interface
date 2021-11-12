@@ -1,0 +1,11 @@
+@use "sass:color"
+
+$color1: #372869
+$color2: #D50A80
+$color3: #37B0C3
+
+$color1-background: color.change($color1, $lightness: 20%, $alpha: 0.7)
+$color2-background: color.change($color2, $lightness: 20%, $alpha: 0.7)
+$color3-background: color.change($color3, $lightness: 20%, $alpha: 0.7)
+
+$color3-tile: color.change($color3, $lightness: 40%, $alpha: 0.9, $saturation: 70%)
